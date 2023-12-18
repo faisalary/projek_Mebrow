@@ -368,48 +368,6 @@
                     </div>
             </div>
             </form>
-            <!-- <?php
-            if (isset($_POST['click'])) {
-                require 'contoller/config.php';
-                $name = $_POST["username"];
-                $comment = $_POST["comment"];
-
-                $cek_edit = "SELECT * FROM `comment`
-                  WHERE username = '$name' AND comment = '$comment'";
-
-                $cek = mysqli_query($conn, $cek_edit);
-
-                if (mysqli_num_rows($cek) > 0) {
-                    echo "";
-                } else {
-                    mysqli_query($conn, "INSERT INTO `comment` (`username`, `comment`)
-                                         VALUES ('$name','$comment')");
-
-                    echo "<script> alert('COMMENT SUDAH DISIMPAN')</script>";
-                }
-            }
-            ?>
-            <?php
-            require 'contoller/config.php';
-            $sqlget = "SELECT * FROM `comment`";
-            $query = mysqli_query($conn, $sqlget);
-
-            while ($data = mysqli_fetch_array($query)) {
-                echo "
-                <div data-aos='fade-down' data-aos-duration='150' class='row my-3 row-bg p-4 rounded shadow'>
-                <div class='d-flex col'>
-                    <img class='me-3' src='asset/img/icons/user.png' style='width: 50px; height: 50px;' alt=''>
-                    <div class='d-grid'>
-                        <p class='fw-bold mb-0'>$data[username]</p>
-                        <p class='mb-0'>$data[comment]</p>
-                     </div>
-                  </div>
-                </div>";
-            }
-
-            ?> -->
-
-
         </div>
     </section>
 
